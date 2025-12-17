@@ -1,5 +1,6 @@
+
 <!DOCTYPE html>
-<html lang="en" data-style-switcher-options="{'changeLogo': false, 'borderRadius': 0, 'colorPrimary': '#4be296', 'colorSecondary': '#2e895b', 'colorTertiary': '#1f2f28', 'colorQuaternary': '#f7f0e7'}">
+<html lang="en" data-style-switcher-options="{'changeLogo': false, 'borderRadius': 0, 'colorPrimary': '#2563eb', 'colorSecondary': '#1e40af', 'colorTertiary': '#1e293b', 'colorQuaternary': '#f7f0e7'}">
 	
 <!-- Mirrored from www.okler.net/previews/porto/13.0.0/demo-accounting-1.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 16 Dec 2025 12:19:35 GMT -->
 <head>
@@ -52,12 +53,994 @@
 			gtag('config', 'G-T21B0FFW8M');
 		</script>
 
+
+		<!-- Custom Styles for Modern Header and Design -->
+		<style>
+			/* =============================================
+			   MODERN INTERNATIONAL INDUSTRY HEADER STYLES
+			   ============================================= */
+
+			/* Top Bar Styling */
+			.header-top-bar {
+				background: linear-gradient(135deg, #1e293b 0%, #1e40af 100%);
+				color: #fff;
+				font-size: 13px;
+				padding: 10px 0;
+				border-bottom: 2px solid #2563eb;
+			}
+
+			.header-top-bar a {
+				color: #fff;
+				text-decoration: none;
+				transition: all 0.3s ease;
+			}
+
+			.header-top-bar a:hover {
+				color: #2563eb;
+			}
+
+			.header-top-bar i {
+				margin-right: 6px;
+				color: #2563eb;
+			}
+
+			.top-bar-info-item {
+				display: inline-flex;
+				align-items: center;
+				margin-right: 25px;
+				font-weight: 500;
+			}
+
+			.social-links-top a {
+				display: inline-flex;
+				align-items: center;
+				justify-content: center;
+				width: 32px;
+				height: 32px;
+				background: rgba(255, 255, 255, 0.1);
+				border-radius: 50%;
+				margin-left: 8px;
+				transition: all 0.3s ease;
+			}
+
+			.social-links-top a:hover {
+				background: #2563eb;
+				transform: translateY(-2px);
+			}
+
+			.social-links-top i {
+				margin: 0;
+				font-size: 14px;
+			}
+
+			/* Enhanced Header Body */
+			#header .header-body {
+				box-shadow: 0 2px 15px rgba(0, 0, 0, 0.08);
+				background: #fff;
+				position: relative;
+				z-index: 1000;
+			}
+
+			#header.header-effect-shrink .header-body {
+				transition: all 0.3s ease;
+			}
+
+			/* Logo Enhancement */
+			.header-logo img {
+				max-height: 65px;
+				transition: all 0.3s ease;
+			}
+
+			#header.header-effect-shrink.shrink .header-logo img {
+				max-height: 50px;
+			}
+
+			/* Navigation Enhancements */
+			.header-nav-main .nav-pills > li > a {
+				font-weight: 600;
+				font-size: 15px;
+				letter-spacing: 0.3px;
+				padding: 10px 18px;
+				position: relative;
+				text-transform: uppercase;
+				color: #2e2e2e;
+				transition: all 0.3s ease;
+			}
+
+			.header-nav-main .nav-pills > li > a::before {
+				content: '';
+				position: absolute;
+				bottom: 0;
+				left: 50%;
+				transform: translateX(-50%);
+				width: 0;
+				height: 2px;
+				background: linear-gradient(90deg, #2563eb, #1e40af);
+				transition: width 0.3s ease;
+			}
+
+			.header-nav-main .nav-pills > li > a:hover::before,
+			.header-nav-main .nav-pills > li > a.active::before {
+				width: 80%;
+			}
+
+			.header-nav-main .nav-pills > li > a:hover,
+			.header-nav-main .nav-pills > li > a.active {
+				color: #1e40af;
+				background: transparent;
+			}
+
+			/* Dropdown Menu Enhancement */
+			.header-nav-main .dropdown-menu {
+				border: none;
+				box-shadow: 0 5px 25px rgba(0, 0, 0, 0.12);
+				border-radius: 8px;
+				padding: 15px 0;
+				margin-top: 15px;
+				background: #fff;
+			}
+
+			.header-nav-main .dropdown-menu::before {
+				content: '';
+				position: absolute;
+				top: -8px;
+				left: 30px;
+				width: 0;
+				height: 0;
+				border-left: 8px solid transparent;
+				border-right: 8px solid transparent;
+				border-bottom: 8px solid #fff;
+			}
+
+			.header-nav-main .dropdown-item {
+				padding: 12px 28px;
+				font-weight: 500;
+				font-size: 14px;
+				color: #555;
+				position: relative;
+				transition: all 0.3s ease;
+			}
+
+			.header-nav-main .dropdown-item::before {
+				content: '';
+				position: absolute;
+				left: 0;
+				top: 50%;
+				transform: translateY(-50%);
+				width: 0;
+				height: 70%;
+				background: linear-gradient(135deg, #2563eb, #1e40af);
+				transition: width 0.3s ease;
+			}
+
+			.header-nav-main .dropdown-item:hover {
+				background: rgba(37, 99, 235, 0.05);
+				padding-left: 35px;
+				color: #1e40af;
+			}
+
+			.header-nav-main .dropdown-item:hover::before {
+				width: 3px;
+			}
+
+			/* CTA Button in Header */
+			.header-cta-btn {
+				background: linear-gradient(135deg, #2563eb 0%, #1e40af 100%);
+				color: #fff;
+				padding: 12px 28px;
+				border-radius: 50px;
+				font-weight: 600;
+				font-size: 14px;
+				text-transform: uppercase;
+				letter-spacing: 0.5px;
+				border: none;
+				transition: all 0.3s ease;
+				box-shadow: 0 4px 15px rgba(37, 99, 235, 0.3);
+				display: inline-flex;
+				align-items: center;
+			}
+
+			.header-cta-btn:hover {
+				transform: translateY(-2px);
+				box-shadow: 0 6px 20px rgba(37, 99, 235, 0.4);
+				background: linear-gradient(135deg, #1e40af 0%, #1e293b 100%);
+			}
+
+			.header-cta-btn i {
+				margin-left: 8px;
+				transition: transform 0.3s ease;
+			}
+
+			.header-cta-btn:hover i {
+				transform: translateX(3px);
+			}
+
+			/* Mobile Menu Toggle */
+			.header-btn-collapse-nav {
+				background: linear-gradient(135deg, #2563eb, #1e40af);
+				border: none;
+				color: #fff;
+				width: 45px;
+				height: 45px;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				transition: all 0.3s ease;
+			}
+
+			.header-btn-collapse-nav:hover {
+				background: linear-gradient(135deg, #1e40af, #1e293b);
+				transform: scale(1.05);
+			}
+
+			/* Responsive Adjustments */
+			@media (max-width: 991px) {
+				.header-top-bar {
+					display: none;
+				}
+
+				.header-logo img {
+					max-height: 50px;
+				}
+
+				.top-bar-info-item {
+					margin-right: 15px;
+					font-size: 12px;
+				}
+
+				.social-links-top a {
+					width: 28px;
+					height: 28px;
+				}
+			}
+
+			/* =============================================
+			   INTERNATIONAL INDUSTRY DESIGN ENHANCEMENTS
+			   ============================================= */
+
+			/* Professional Typography */
+			/* body {
+				font-family: 'Poppins', sans-serif;
+				color: #444;
+				line-height: 1.7;
+			}
+
+			h1, h2, h3, h4, h5, h6 {
+				font-weight: 700;
+				color: #1e293b;
+				letter-spacing: -0.5px;
+			} */
+
+			/* Section Badges Enhancement */
+			/* .badge.bg-gradient-light-primary-rgba-20 {
+				background: linear-gradient(135deg, rgba(37, 99, 235, 0.15), rgba(30, 64, 175, 0.15)) !important;
+				border: 1px solid rgba(37, 99, 235, 0.3);
+				padding: 10px 20px !important;
+				font-size: 13px;
+				font-weight: 600;
+				letter-spacing: 1px;
+			} */
+
+			/* Enhanced Feature Boxes */
+			.feature-box {
+				transition: all 0.3s ease;
+			}
+
+			.feature-box:hover {
+				transform: translateY(-5px);
+			}
+
+			.feature-box-icon img {
+				filter: drop-shadow(0 4px 10px rgba(37, 99, 235, 0.2));
+			}
+
+			/* Professional Button Styles */
+			/* .btn-rounded.btn-dark {
+				background: linear-gradient(135deg, #1e293b 0%, #1e40af 100%);
+				border: none;
+				padding: 14px 32px;
+				font-weight: 600;
+				letter-spacing: 0.5px;
+				box-shadow: 0 5px 20px rgba(30, 41, 59, 0.25);
+				transition: all 0.3s ease;
+			}
+
+			.btn-rounded.btn-dark:hover {
+				transform: translateY(-2px);
+				box-shadow: 0 7px 25px rgba(30, 41, 59, 0.35);
+				background: linear-gradient(135deg, #1e40af 0%, #2563eb 100%);
+			} */
+
+			/* Enhanced Cards */
+			.card {
+				transition: all 0.3s ease;
+				border: none;
+			}
+
+			.card:hover {
+				transform: translateY(-8px);
+			}
+
+			/* Stats/Numbers Enhancement */
+			mark.bg-color-before-primary-rgba-30 {
+				background: linear-gradient(135deg, rgba(37, 99, 235, 0.2), rgba(30, 64, 175, 0.2)) !important;
+				padding: 8px 15px;
+				border-radius: 8px;
+			}
+
+			/* Professional Section Spacing */
+			.container {
+				position: relative;
+			}
+
+			/* Industry-specific Design Elements */
+			/* .bg-grey-100 {
+				background: linear-gradient(180deg, #f8f9fa 0%, #ffffff 100%) !important;
+			} */
+
+			/* Enhanced Icons Section */
+			.feature-box-icon.feature-box-icon-lg {
+				box-shadow: 0 8px 20px rgba(37, 99, 235, 0.2);
+			}
+
+			/* Professional Footer Enhancement */
+			/* #footer {
+				background: linear-gradient(135deg, #1e293b 0%, #1e3a5f 100%);
+				color: #e0e0e0;
+			} */
+
+			#footer h4 {
+				color: #2563eb;
+				font-weight: 700;
+				margin-bottom: 20px;
+			}
+
+			#footer a {
+				transition: all 0.3s ease;
+			}
+
+			#footer a:hover {
+				color: #2563eb !important;
+				padding-left: 5px;
+			}
+
+			/* Smooth Scrolling */
+			html {
+				scroll-behavior: smooth;
+			}
+
+			/* Professional Image Overlays */
+			.border-radius-2 {
+				border-radius: 12px !important;
+				overflow: hidden;
+			}
+
+			/* Enhanced Box Shadows */
+			.box-shadow-7 {
+				box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1) !important;
+			}
+
+			.box-shadow-8 {
+				box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08) !important;
+			}
+
+			.box-shadow-10 {
+				box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12) !important;
+			}
+
+			/* Professional Hover Effects */
+			.anim-hover-translate-top-10px:hover {
+				transform: translateY(-10px) !important;
+				box-shadow: 0 20px 45px rgba(0, 0, 0, 0.15) !important;
+			}
+
+			/* =============================================
+			   PREMIUM B2B MANUFACTURING DESIGN ELEMENTS
+			   ============================================= */
+
+			/* Statistics Counter Section */
+			.stats-counter {
+				background: linear-gradient(135deg, #1e293b 0%, #1e40af 100%);
+				position: relative;
+				overflow: hidden;
+				padding: 60px 0;
+			}
+
+			.stats-counter::before {
+				content: '';
+				position: absolute;
+				top: 0;
+				left: 0;
+				right: 0;
+				bottom: 0;
+				background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="50" cy="50" r="40" fill="none" stroke="rgba(255,255,255,0.03)" stroke-width="0.5"/></svg>');
+				background-size: 100px 100px;
+				opacity: 0.5;
+			}
+
+			.stat-item {
+				text-align: center;
+				padding: 20px;
+				position: relative;
+				z-index: 1;
+			}
+
+			.stat-number {
+				font-size: 48px;
+				font-weight: 800;
+				color: #2563eb;
+				line-height: 1;
+				margin-bottom: 10px;
+				display: block;
+				text-shadow: 0 2px 10px rgba(37, 99, 235, 0.3);
+			}
+
+			.stat-label {
+				font-size: 15px;
+				color: #e0e0e0;
+				font-weight: 500;
+				text-transform: uppercase;
+				letter-spacing: 1px;
+			}
+
+			.stat-item::after {
+				content: '';
+				position: absolute;
+				right: 0;
+				top: 50%;
+				transform: translateY(-50%);
+				width: 1px;
+				height: 60%;
+				background: rgba(255, 255, 255, 0.15);
+			}
+
+			.stat-item:last-child::after {
+				display: none;
+			}
+
+			/* Trust Badges Section */
+			.trust-badges {
+				background: #f8f9fa;
+				padding: 40px 0;
+				border-top: 1px solid #e0e0e0;
+				border-bottom: 1px solid #e0e0e0;
+			}
+
+			.trust-badge-item {
+				text-align: center;
+				padding: 15px;
+				transition: all 0.3s ease;
+				opacity: 0.7;
+			}
+
+			.trust-badge-item:hover {
+				opacity: 1;
+				transform: scale(1.05);
+			}
+
+			.trust-badge-item img {
+				max-height: 50px;
+				filter: grayscale(100%);
+				transition: all 0.3s ease;
+			}
+
+			.trust-badge-item:hover img {
+				filter: grayscale(0%);
+			}
+
+			/* Professional Section Divider */
+			.section-divider {
+				position: relative;
+				height: 1px;
+				background: linear-gradient(90deg, transparent, #e0e0e0, transparent);
+				margin: 60px 0;
+			}
+
+			.section-divider::before {
+				content: '';
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				width: 60px;
+				height: 60px;
+				background: #fff;
+				border: 2px solid #2563eb;
+				border-radius: 50%;
+			}
+
+			.section-divider::after {
+				content: '';
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+				width: 10px;
+				height: 10px;
+				background: linear-gradient(135deg, #2563eb, #1e40af);
+				border-radius: 50%;
+			}
+
+			/* Enhanced Hero Section */
+			.hero-overlay {
+				position: absolute;
+				top: 0;
+				left: 0;
+				right: 0;
+				bottom: 0;
+				background: linear-gradient(135deg, rgba(30, 41, 59, 0.85) 0%, rgba(30, 64, 175, 0.75) 100%);
+				z-index: 1;
+			}
+
+			.hero-content {
+				position: relative;
+				z-index: 2;
+			}
+
+			.hero-title {
+				font-size: 56px;
+				font-weight: 800;
+				color: #fff;
+				line-height: 1.2;
+				text-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+				margin-bottom: 20px;
+			}
+
+			.hero-subtitle {
+				font-size: 20px;
+				color: #e0e0e0;
+				font-weight: 400;
+				line-height: 1.6;
+				margin-bottom: 30px;
+			}
+
+			.hero-cta-primary {
+				background: linear-gradient(135deg, #2563eb, #1e40af);
+				color: #fff;
+				padding: 16px 40px;
+				border-radius: 50px;
+				font-weight: 700;
+				font-size: 16px;
+				text-transform: uppercase;
+				letter-spacing: 1px;
+				border: none;
+				box-shadow: 0 8px 25px rgba(37, 99, 235, 0.4);
+				transition: all 0.3s ease;
+				display: inline-flex;
+				align-items: center;
+				text-decoration: none;
+			}
+
+			.hero-cta-primary:hover {
+				transform: translateY(-3px);
+				box-shadow: 0 12px 35px rgba(37, 99, 235, 0.5);
+				color: #fff;
+			}
+
+			.hero-cta-secondary {
+				background: transparent;
+				color: #fff;
+				padding: 16px 40px;
+				border-radius: 50px;
+				font-weight: 700;
+				font-size: 16px;
+				text-transform: uppercase;
+				letter-spacing: 1px;
+				border: 2px solid #fff;
+				transition: all 0.3s ease;
+				display: inline-flex;
+				align-items: center;
+				text-decoration: none;
+				margin-left: 15px;
+			}
+
+			.hero-cta-secondary:hover {
+				background: #fff;
+				color: #1e293b;
+			}
+
+			/* Industry Icons Grid */
+			.industry-icon-box {
+				background: #fff;
+				padding: 30px 20px;
+				border-radius: 12px;
+				text-align: center;
+				transition: all 0.3s ease;
+				border: 1px solid #e0e0e0;
+				position: relative;
+				overflow: hidden;
+			}
+
+			.industry-icon-box::before {
+				content: '';
+				position: absolute;
+				top: 0;
+				left: -100%;
+				width: 100%;
+				height: 100%;
+				background: linear-gradient(90deg, transparent, rgba(37, 99, 235, 0.1), transparent);
+				transition: left 0.5s ease;
+			}
+
+			.industry-icon-box:hover::before {
+				left: 100%;
+			}
+
+			.industry-icon-box:hover {
+				transform: translateY(-10px);
+				border-color: #2563eb;
+				box-shadow: 0 15px 40px rgba(37, 99, 235, 0.2);
+			}
+
+			.industry-icon-box i {
+				font-size: 48px;
+				color: #2563eb;
+				margin-bottom: 15px;
+				display: block;
+			}
+
+			.industry-icon-box h5 {
+				font-size: 16px;
+				font-weight: 700;
+				color: #1e293b;
+				margin-bottom: 8px;
+			}
+
+			.industry-icon-box p {
+				font-size: 13px;
+				color: #666;
+				margin: 0;
+			}
+
+			/* Professional Content Cards */
+			.content-card-modern {
+				background: #fff;
+				border-radius: 15px;
+				padding: 40px;
+				box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+				transition: all 0.3s ease;
+				border-left: 4px solid #2563eb;
+			}
+
+			.content-card-modern:hover {
+				transform: translateX(5px);
+				box-shadow: 0 15px 50px rgba(0, 0, 0, 0.12);
+			}
+
+			.content-card-icon {
+				width: 70px;
+				height: 70px;
+				background: linear-gradient(135deg, #2563eb, #1e40af);
+				border-radius: 50%;
+				display: flex;
+				align-items: center;
+				justify-content: center;
+				margin-bottom: 25px;
+				box-shadow: 0 5px 20px rgba(37, 99, 235, 0.3);
+			}
+
+			.content-card-icon i {
+				font-size: 32px;
+				color: #fff;
+			}
+
+			/* Testimonial / Quote Style */
+			.professional-quote {
+				background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 100%);
+				border-left: 5px solid #2563eb;
+				padding: 30px 40px;
+				border-radius: 12px;
+				position: relative;
+				font-style: italic;
+				color: #555;
+				box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+			}
+
+			.professional-quote::before {
+				content: '"';
+				position: absolute;
+				top: -20px;
+				left: 30px;
+				font-size: 80px;
+				color: #2563eb;
+				opacity: 0.3;
+				font-family: Georgia, serif;
+			}
+
+			/* Enhanced Image Gallery */
+			.image-gallery-item {
+				position: relative;
+				overflow: hidden;
+				border-radius: 12px;
+			}
+
+			.image-gallery-item::after {
+				content: '';
+				position: absolute;
+				top: 0;
+				left: 0;
+				right: 0;
+				bottom: 0;
+				background: linear-gradient(135deg, rgba(30, 41, 59, 0.8), rgba(37, 99, 235, 0.6));
+				opacity: 0;
+				transition: opacity 0.3s ease;
+			}
+
+			.image-gallery-item:hover::after {
+				opacity: 1;
+			}
+
+			/* Capability Pills */
+			.capability-pill {
+				display: inline-block;
+				background: rgba(37, 99, 235, 0.1);
+				color: #1e40af;
+				padding: 8px 20px;
+				border-radius: 25px;
+				font-size: 13px;
+				font-weight: 600;
+				margin: 5px;
+				border: 1px solid rgba(37, 99, 235, 0.3);
+				transition: all 0.3s ease;
+			}
+
+			.capability-pill:hover {
+				background: #2563eb;
+				color: #fff;
+				transform: scale(1.05);
+			}
+
+			/* Professional List Enhancement */
+			.professional-list {
+				list-style: none;
+				padding: 0;
+			}
+
+			.professional-list li {
+				padding: 12px 0;
+				padding-left: 35px;
+				position: relative;
+				font-size: 15px;
+				color: #555;
+			}
+
+			.professional-list li::before {
+				content: '\f00c';
+				font-family: 'Font Awesome 6 Free';
+				font-weight: 900;
+				position: absolute;
+				left: 0;
+				color: #2563eb;
+				font-size: 16px;
+			}
+
+			/* Section Title Enhancement */
+			.section-title-modern {
+				position: relative;
+				padding-bottom: 20px;
+				margin-bottom: 40px;
+			}
+
+			.section-title-modern::after {
+				content: '';
+				position: absolute;
+				bottom: 0;
+				left: 0;
+				width: 80px;
+				height: 4px;
+				background: linear-gradient(90deg, #2563eb, #1e40af);
+				border-radius: 2px;
+			}
+
+			.section-title-modern.text-center::after {
+				left: 50%;
+				transform: translateX(-50%);
+			}
+
+			/* Responsive Enhancements */
+			@media (max-width: 768px) {
+				.hero-title {
+					font-size: 36px;
+				}
+
+				.hero-subtitle {
+					font-size: 16px;
+				}
+
+				.stat-number {
+					font-size: 36px;
+				}
+
+				.hero-cta-secondary {
+					margin-left: 0;
+					margin-top: 10px;
+				}
+			}
+
+			/* =============================================
+			   MODERN ACCORDION ENHANCEMENTS
+			   ============================================= */
+			.accordion-modern-enhanced .card {
+				margin-bottom: 20px;
+				border: none;
+				transition: all 0.3s ease;
+				overflow: hidden;
+			}
+
+			.accordion-modern-enhanced .card:hover {
+				transform: translateY(-3px);
+				box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15) !important;
+			}
+
+			.accordion-modern-enhanced .card-header {
+				padding: 0;
+				border: none;
+				background: transparent;
+			}
+
+			.accordion-modern-enhanced .accordion-toggle {
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+				width: 100%;
+				padding: 22px 28px;
+				text-decoration: none;
+				position: relative;
+				transition: all 0.3s ease;
+			}
+
+			.accordion-modern-enhanced .accordion-toggle:hover {
+				background: rgba(37, 99, 235, 0.08);
+			}
+
+			/* Icon Container */
+			.accordion-icon {
+				display: inline-flex;
+				align-items: center;
+				justify-content: center;
+				width: 32px;
+				height: 32px;
+				border-radius: 50%;
+				background: linear-gradient(135deg, #2563eb 0%, #1e40af 100%);
+				transition: all 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+				flex-shrink: 0;
+				margin-left: 15px;
+			}
+
+			.accordion-modern-enhanced .accordion-toggle[aria-expanded="true"] .accordion-icon {
+				transform: rotate(180deg);
+				background: linear-gradient(135deg, #1e40af 0%, #1e293b 100%);
+			}
+
+			.accordion-icon i {
+				color: #fff;
+				font-size: 16px;
+				transition: all 0.3s ease;
+			}
+
+			/* Card Body Animation */
+			.accordion-modern-enhanced .card-body {
+				padding: 0 28px 24px 28px;
+				animation: slideDown 0.3s ease-out;
+			}
+
+			@keyframes slideDown {
+				from {
+					opacity: 0;
+					transform: translateY(-10px);
+				}
+				to {
+					opacity: 1;
+					transform: translateY(0);
+				}
+			}
+
+			/* Active State */
+			.accordion-modern-enhanced .accordion-toggle[aria-expanded="true"] {
+				background: rgba(37, 99, 235, 0.05);
+				color: #1e40af !important;
+			}
+
+			/* Content Styling */
+			.accordion-modern-enhanced .card-body p {
+				color: #666;
+				line-height: 1.8;
+				font-size: 15px;
+			}
+
+			/* Number Badge (optional enhancement) */
+			.accordion-number {
+				display: inline-flex;
+				align-items: center;
+				justify-content: center;
+				width: 28px;
+				height: 28px;
+				border-radius: 50%;
+				background: rgba(37, 99, 235, 0.15);
+				color: #1e40af;
+				font-weight: 700;
+				font-size: 14px;
+				margin-right: 15px;
+				transition: all 0.3s ease;
+			}
+
+			.accordion-modern-enhanced .accordion-toggle[aria-expanded="true"] .accordion-number {
+				background: #2563eb;
+				color: #fff;
+			}
+
+			/* Responsive Adjustments */
+			@media (max-width: 768px) {
+				.accordion-modern-enhanced .accordion-toggle {
+					padding: 18px 20px;
+					font-size: 15px !important;
+				}
+
+				.accordion-icon {
+					width: 28px;
+					height: 28px;
+					margin-left: 10px;
+				}
+
+				.accordion-number {
+					width: 24px;
+					height: 24px;
+					font-size: 12px;
+					margin-right: 10px;
+				}
+			}
+		</style>
+
 	</head>
 	<body>
 
 		<div class="body">
 			<header id="header" class="header-effect-shrink" data-plugin-options="{'stickyScrollUp': true, 'stickyEnabled': true, 'stickyEffect': 'shrink', 'stickyEnableOnBoxed': true, 'stickyEnableOnMobile': false, 'stickyChangeLogo': true, 'stickyStartAt': 155, 'stickyHeaderContainerHeight': 70}">
-				<div class="header-body border-top-0 border-bottom border-bottom-light h-auto box-shadow-none">
+
+				<!-- Top Bar -->
+				<div class="header-top-bar">
+					<div class="container">
+						<div class="row align-items-center">
+							<div class="col-lg-8 col-md-7">
+								<div class="d-flex flex-wrap align-items-center">
+									<span class="top-bar-info-item">
+										<i class="fas fa-phone-alt"></i>
+										<a href="tel:+918002341234">+91 800 234 1234</a>
+									</span>
+									<span class="top-bar-info-item">
+										<i class="fas fa-envelope"></i>
+										<a href="mailto:info@fdgroup.com">info@fdgroup.com</a>
+									</span>
+									<span class="top-bar-info-item d-none d-lg-inline-flex">
+										<i class="fas fa-clock"></i>
+										Mon - Sat: 9:00 AM - 6:00 PM
+									</span>
+								</div>
+							</div>
+							<div class="col-lg-4 col-md-5 text-end">
+								<div class="d-flex justify-content-end align-items-center">
+									<span class="me-3 d-none d-md-inline" style="font-size: 12px; opacity: 0.9;">Follow Us:</span>
+									<div class="social-links-top">
+										<a href="#" title="Facebook" target="_blank">
+											<i class="fab fa-facebook-f"></i>
+										</a>
+										<a href="#" title="LinkedIn" target="_blank">
+											<i class="fab fa-linkedin-in"></i>
+										</a>
+										<a href="#" title="Twitter" target="_blank">
+											<i class="fab fa-twitter"></i>
+										</a>
+										<a href="#" title="Instagram" target="_blank">
+											<i class="fab fa-instagram"></i>
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="header-body border-top-0 border-bottom-0 h-auto">
 			
 					<div class="container">
 						<div class="row align-items-center py-3">
@@ -127,9 +1110,11 @@
 								</div>
 					
 							</div>
-							<div class="col-auto col-lg-2">
-								<div class="d-flex justify-content-end align-items-center">
+							<div class="col-auto">
+								<div class="d-flex justify-content-end align-items-center gap-3">
 							
+
+									<!-- Mobile Menu Toggle -->
 									<button class="btn header-btn-collapse-nav rounded-pill" data-bs-toggle="offcanvas" href="#offcanvasMain" role="button" aria-controls="offcanvasMain">
 										<i class="fas fa-bars"></i>
 									</button>
@@ -142,39 +1127,122 @@
 			
 			<div role="main" class="main px-3 px-lg-5">
 
-				<!-- Main Slider -->
+				<!-- Main Hero Slider -->
 				<div class="owl-carousel owl-carousel-light owl-carousel-light-init-fadeIn owl-theme manual nav-style-1 nav-arrows-thin nav-inside nav-inside-plus nav-dark nav-lg nav-font-size-lg rounded-nav nav-borders show-nav-hover mb-0" data-plugin-options="{'autoplay': true, 'autoplayTimeout': 7000}" data-dynamic-height="['750px','750px','750px','750px','750px']" style="height: 750px;">
 					<div class="owl-stage-outer">
 						<div class="owl-stage">
-												
+
 							<!-- Carousel Slide 1 -->
 							<div class="owl-item p-relative overflow-hidden">
-								<div class=" border-radius-2 p-relative z-index-1 overflow-hidden">
+								<div class="border-radius-2 p-relative overflow-hidden" style="height: 750px;">
+									<!-- Video Background -->
 									<video autoplay muted loop playsinline class="p-absolute w-100 h-100 top-0 left-0" style="object-fit: cover; z-index: 0;">
 										<source src="https://designernetcom.github.io/FIFO-Group/img/fifo.mp4" type="video/mp4">
 									</video>
-								
-									<div class="container p-relative z-index-2">
-										<div class="row justify-content-center align-items-center mh-750px py-5">
-											<div class="col-lg-5 text-center text-lg-start px-4">
-										
-											</div>
-											<div class="col-8 col-lg-7 mt-3 px-md-5 ps-xl-5 pe-xxl-0 mt-lg-0">		
-												<div class="p-relative">
-											
+
+									<!-- Professional Overlay -->
+									<!-- <div class="hero-overlay"></div> -->
+
+									<!-- Hero Content -->
+									<div class="container hero-content">
+										<div class="row justify-content-center align-items-center" style="min-height: 750px;">
+											<div class="col-lg-10 text-center px-4">
+												<!-- <div class="appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="200">
+													<span class="badge bg-light text-primary rounded-pill text-uppercase font-weight-bold px-4 py-2 mb-3" style="font-size: 12px; letter-spacing: 2px;">
+														ISO 9001:2015 Certified Manufacturing
+													</span>
 												</div>
+												<div class="appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="400">
+													<h1 class="hero-title">
+														Precision Engineering<br>
+														<span style="color: #2563eb;">For Global Industries</span>
+													</h1>
+												</div>
+												<div class="appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="600">
+													<p class="hero-subtitle mx-auto" style="max-width: 700px;">
+														World-class injection moulds, plastic components, and heavy engineering solutions with 10+ years of manufacturing excellence
+													</p>
+												</div>
+												<div class="appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="800">
+													<div class="d-flex flex-wrap justify-content-center align-items-center gap-3 mt-4">
+														<a href="#" class="hero-cta-primary">
+															Explore Our Solutions
+															<i class="fas fa-arrow-right ms-2"></i>
+														</a>
+														<a href="#" class="hero-cta-secondary">
+															Request Quote
+															<i class="fas fa-file-alt ms-2"></i>
+														</a>
+													</div>
+												</div> -->
 											</div>
 										</div>
 									</div>
 								</div>
 							</div>
-							
+
 
 						</div>
 					</div>
 					<div class="owl-nav">
 						<button type="button" role="presentation" class="owl-prev" aria-label="Previous"></button>
 						<button type="button" role="presentation" class="owl-next" aria-label="Next"></button>
+					</div>
+				</div>
+
+				<!-- Statistics Counter Section -->
+		
+
+				<!-- Trust Badges / Certifications -->
+				<div class="trust-badges">
+					<div class="container">
+						<div class="row align-items-center">
+							<div class="col-12 text-center mb-3">
+								<span class="text-uppercase font-weight-bold" style="font-size: 13px; color: #666; letter-spacing: 2px;">Trusted By Leading Industries</span>
+							</div>
+						</div>
+						<div class="row align-items-center justify-content-center">
+							<div class="col-6 col-md-2">
+								<div class="trust-badge-item appear-animation" data-appear-animation="fadeIn" data-appear-animation-delay="200">
+									<div class="d-flex align-items-center justify-content-center" style="height: 50px;">
+										<i class="fas fa-certificate text-primary" style="font-size: 40px;"></i>
+									</div>
+									<p class="mt-2 mb-0" style="font-size: 11px; font-weight: 600;">ISO 9001:2015</p>
+								</div>
+							</div>
+							<div class="col-6 col-md-2">
+								<div class="trust-badge-item appear-animation" data-appear-animation="fadeIn" data-appear-animation-delay="400">
+									<div class="d-flex align-items-center justify-content-center" style="height: 50px;">
+										<i class="fas fa-industry text-primary" style="font-size: 40px;"></i>
+									</div>
+									<p class="mt-2 mb-0" style="font-size: 11px; font-weight: 600;">Manufacturing</p>
+								</div>
+							</div>
+							<div class="col-6 col-md-2">
+								<div class="trust-badge-item appear-animation" data-appear-animation="fadeIn" data-appear-animation-delay="600">
+									<div class="d-flex align-items-center justify-content-center" style="height: 50px;">
+										<i class="fas fa-award text-primary" style="font-size: 40px;"></i>
+									</div>
+									<p class="mt-2 mb-0" style="font-size: 11px; font-weight: 600;">Quality Assured</p>
+								</div>
+							</div>
+							<div class="col-6 col-md-2">
+								<div class="trust-badge-item appear-animation" data-appear-animation="fadeIn" data-appear-animation-delay="800">
+									<div class="d-flex align-items-center justify-content-center" style="height: 50px;">
+										<i class="fas fa-globe text-primary" style="font-size: 40px;"></i>
+									</div>
+									<p class="mt-2 mb-0" style="font-size: 11px; font-weight: 600;">Global Reach</p>
+								</div>
+							</div>
+							<div class="col-6 col-md-2">
+								<div class="trust-badge-item appear-animation" data-appear-animation="fadeIn" data-appear-animation-delay="1000">
+									<div class="d-flex align-items-center justify-content-center" style="height: 50px;">
+										<i class="fas fa-handshake text-primary" style="font-size: 40px;"></i>
+									</div>
+									<p class="mt-2 mb-0" style="font-size: 11px; font-weight: 600;">Trusted Partner</p>
+								</div>
+							</div>
+						</div>
 					</div>
 				</div>
 
@@ -230,18 +1298,36 @@
 					</div>
 				</div>
 
+				<!-- Section Divider -->
+				<div class="section-divider"></div>
+
 				<!-- Who We Are -->
 				<div class="container" id="intro">
 					<div class="row align-items-center">
 						<div class="col-lg-6 mb-5 mt-5 mt-lg-0 py-lg-5">
 							<div class="appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="0">
-								<span class="badge bg-gradient-light-primary-rgba-20 text-primary rounded-pill text-uppercase font-weight-semibold text-2-5 px-3 py-2 px-4 mb-4"><span class="d-inline-flex py-1 px-2">FIFO Group</span></span>
+								<span class="badge bg-gradient-light-primary-rgba-20 text-primary rounded-pill text-uppercase font-weight-semibold text-2-5 px-3 py-2 px-4 mb-4">
+									<span class="d-inline-flex py-1 px-2">
+										<i class="fas fa-building me-2"></i>FIFO Group
+									</span>
+								</span>
 							</div>
 							<div class="appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="200">
-								<h2 class="text-6 text-lg-12 font-weight-semibold line-height-1 mb-4"> Where Moulds Meet Mastery.</h2>
+								<h2 class=" " style="font-size: 25px;">Where Moulds Meet Mastery</h2>
 							</div>
 							<div class="appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="400">
-								<p class="pe-lg-5">FD Group (FIFO Industries & 3D India Polymers) delivers high-precision injection moulds and plastic components with world-class engineering, advanced manufacturing, and ISO-certified quality.</p>
+								<p class="pe-lg-5 text-4">FD Group (FIFO Industries & 3D India Polymers) delivers high-precision injection moulds and plastic components with world-class engineering, advanced manufacturing, and ISO-certified quality.</p>
+							</div>
+
+							<!-- Core Capabilities Pills -->
+							<div class="appear-animation mt-4" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="500">
+								<div class="mb-3">
+									<span class="capability-pill"><i class="fas fa-cog me-1"></i> Precision Moulds</span>
+									<span class="capability-pill"><i class="fas fa-industry me-1"></i> Injection Molding</span>
+									<span class="capability-pill"><i class="fas fa-cube me-1"></i> 3D Polymer Tech</span>
+									<span class="capability-pill"><i class="fas fa-tools me-1"></i> Heavy Engineering</span>
+									<span class="capability-pill"><i class="fas fa-certificate me-1"></i> ISO Certified</span>
+								</div>
 							</div>
 							<!-- <div class="appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="400">
 								<p class="pe-lg-5">Trusted by 300+ industries. FD Group was born in 2015 with a simple but powerful mission: to deliver precision-engineered moulds and plastic components that help manufacturers build world-class products.</p>
@@ -252,7 +1338,7 @@
 
 							<div class="appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="600">
 								<div class="d-flex align-items-center pt-2 pb-4">
-									<p class="d-inline-block mb-0 font-weight-bold line-height-1"><mark class="text-dark mark mark-pos-2 mark-height-50 mark-color bg-color-before-primary-rgba-30 font-secondary text-15 mark-height-30 n-ls-5 p-0">10+</mark></p>
+									<p class="d-inline-block mb-0 font-weight-bold line-height-1"><mark class="text-dark mark mark-pos-2 mark-height-50 mark-color  font-secondary text-9 mark-height-30 n-ls-5 p-0">10+</mark></p>
 									<span class="custom-font-tertiary text-6 text-dark n-ls-1 fst-italic ps-2">Years of Experience</span>
 								</div>
 							</div>
@@ -326,12 +1412,18 @@
 
 						</div>
 						<div class="col-lg-6 p-relative">
-                            <div class="accordion accordion-modern-status accordion-modern-status-arrow accordion-modern-status-arrow-dark mb-4 my-lg-4 pb-3 pb-lg-0" id="accordionWhoWeAre">
+                            <div class="accordion accordion-modern-enhanced mb-4 my-lg-4 pb-3 pb-lg-0" id="accordionWhoWeAre">
 								<div class="card card-default box-shadow-8 border-radius-2 bg-light">
 									<div class="card-header bg-transparent" id="collapseWhoWeAreHeadingOne">
 										<h4 class="card-title m-0">
 											<a class="accordion-toggle bg-transparent text-3-5 text-color-dark font-weight-semi-bold" data-bs-toggle="collapse" data-bs-target="#collapseWhoWeAreOne" aria-expanded="true" aria-controls="collapseWhoWeAreOne">
-												Our Mission
+												<span class="d-flex align-items-center">
+													<span class="accordion-number">1</span>
+													<span>Our Mission</span>
+												</span>
+												<!-- <span class="accordion-icon">
+													<i class="fas fa-chevron-down"></i>
+												</span> -->
 											</a>
 										</h4>
 									</div>
@@ -345,13 +1437,20 @@
 									<div class="card-header bg-transparent" id="collapseWhoWeAreHeadingTwo">
 										<h4 class="card-title m-0">
 											<a class="accordion-toggle bg-transparent text-3-5 text-color-dark font-weight-semi-bold collapsed" data-bs-toggle="collapse" data-bs-target="#collapseWhoWeAreTwo" aria-expanded="false" aria-controls="collapseWhoWeAreTwo">
-												Our Vision
+												<span class="d-flex align-items-center">
+													<span class="accordion-number">2</span>
+													<span>Our Vision</span> 	
+													<!-- <span class="accordion-icon">
+													<i class="fas fa-chevron-down"></i>
+												</span> -->
+												</span>
+											
 											</a>
 										</h4>
 									</div>
 									<div id="collapseWhoWeAreTwo" class="collapse" aria-labelledby="collapseWhoWeAreHeadingTwo" data-bs-parent="#accordionWhoWeAre">
 										<div class="card-body pt-0">
-											<p class="mb-0">To be the preferred choice in India’s mould manufacturing and plastic components industry by setting new standards of precision, performance, and customer satisfaction.</p>
+											<p class="mb-0">To be the preferred choice in India's mould manufacturing and plastic components industry by setting new standards of precision, performance, and customer satisfaction.</p>
 										</div>
 									</div>
 								</div>
@@ -422,13 +1521,21 @@
                 </div>
 
 
+				<!-- Section Divider -->
+				<div class="section-divider"></div>
+
 				<div class="bg-grey-100 px-3 px-xl-0 border-radius-2 p-relative overflow-hidden custom-pos-3" style="margin-top: 50px;">
 					<div class="container py-5">
 						<div class="row pt-4">
 							<div class="col text-center">
+								<div class="appear-animation" data-appear-animation="fadeIn" data-appear-animation-delay="0">
+									<span class="badge bg-gradient-light-primary-rgba-20 text-secondary rounded-pill text-uppercase font-weight-semibold px-4 py-2 mb-4">
+										<i class="fas fa-sitemap me-2"></i>Our Business Units
+									</span>
+								</div>
 								<div class="appear-animation" data-appear-animation="fadeIn" data-appear-animation-delay="200">
-									<h2 class="text-9 text-lg-12 font-weight-semibold line-height-1 mb-4">Group of
-Companies</h2>
+									<h2 class="text-9 text-lg-12 font-weight-semibold line-height-1 mb-3 section-title-modern text-center">Group of Companies</h2>
+									<p class="text-4 text-muted mb-5 mx-auto" style="max-width: 700px;">Three specialized divisions working in perfect harmony to deliver complete manufacturing solutions</p>
 								</div>
 							</div>
 						</div>
@@ -501,34 +1608,62 @@ Bhosari</a></h4>
 					</div>
 				</div>
 
+				<!-- Section Divider -->
+				<div class="section-divider"></div>
+
 				<!-- Why Choose Us -->
 				<div class="container pt-4 pb-5 pt-lg-5">
 					<div class="row align-items-center py-5">
 						<div class="col-lg-6 mb-5 mb-lg-0 pe-lg-5">
-							<div class="appear-animation1" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="0">
-								<span class="badge bg-gradient-light-primary-rgba-20 text-secondary rounded-pill text-uppercase font-weight-semibold text-2-5 px-3 py-2 px-4 mb-4"><span class="d-inline-flex py-1 px-2">Let’s Work Together</span></span>
+							<div class="appear-animation" data-appear-animation="fadeInRightShorter" data-appear-animation-delay="0">
+								<span class="badge bg-gradient-light-primary-rgba-20 text-secondary rounded-pill text-uppercase font-weight-semibold text-2-5 px-3 py-2 px-4 mb-4">
+									<span class="d-inline-flex py-1 px-2">
+										<i class="fas fa-handshake me-2"></i>Partnership Excellence
+									</span>
+								</span>
 							</div>
 							<div class="appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="200">
-								<h2 class="text-9 text-lg-12 font-weight-semibold line-height-1 mb-4">Who We Are ?</h2>
+								<h2 class="text-9 text-lg-12 font-weight-semibold line-height-1 mb-4 section-title-modern">Who We Are</h2>
 							</div>
 							<div class="appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="400">
-								<p>Built on precision and engineering mastery. We are a global engineering company specializing in precision molds, reliable industrial systems, and next-generation polymer technologies.</p>
+								<p class="text-4 line-height-8 pe-lg-3 mb-4">Built on precision and engineering mastery. We are a global engineering company specializing in precision molds, reliable industrial systems, and next-generation polymer technologies.</p>
 							</div>
+
+							<!-- Professional List -->
+							<div class="appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="500">
+								<ul class="professional-list mb-4">
+									<li>ISO 9001:2015 certified quality management</li>
+									<li>10+ years of manufacturing excellence</li>
+									<li>300+ satisfied clients across industries</li>
+									<li>State-of-the-art production facilities</li>
+									<li>Global supply chain & delivery network</li>
+								</ul>
+							</div>
+
 							<div class="appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="600">
-								<div class="d-flex pt-3 align-items-center">
+								<div class="d-flex flex-wrap gap-3 align-items-center">
 									<a href="demo-accounting-1-contact.html" class="btn btn-rounded btn-dark box-shadow-7 font-weight-medium btn-swap-1" data-clone-element="1">
-										<span>Contact Us <i class="fa-solid fa-arrow-right ms-2 p-relative left-10"></i></span>
+										<span>Partner With Us <i class="fa-solid fa-arrow-right ms-2 p-relative left-10"></i></span>
+									</a>
+									<a href="#" class="text-decoration-none text-primary font-weight-bold">
+										<i class="fas fa-play-circle me-2"></i>Watch Our Story
 									</a>
 								</div>
 							</div>
 						</div>
 						<div class="col-lg-6 p-relative">
-							<div class="accordion accordion-modern-status accordion-modern-status-arrow accordion-modern-status-arrow-dark" id="accordionWhyChooseUs">
+							<div class="accordion accordion-modern-enhanced" id="accordionWhyChooseUs">
 								<div class="card card-default box-shadow-8 border-radius-2 bg-light">
 									<div class="card-header bg-transparent" id="collapseWhyChooseUsHeadingOne">
 										<h4 class="card-title m-0">
 											<a class="accordion-toggle bg-transparent text-3-5 text-color-dark font-weight-semi-bold collapsed" data-bs-toggle="collapse" data-bs-target="#collapseWhyChooseUsOne" aria-expanded="false" aria-controls="collapseWhyChooseUsOne">
-												 WHAT WE STAND FOR 
+												<span class="d-flex align-items-center">
+													<!-- <span class="accordion-number">1</span> -->
+													<span>WHAT WE STAND FOR</span>
+												</span>
+												<!-- <span class="accordion-icon">
+													<i class="fas fa-chevron-down"></i>
+												</span> -->
 											</a>
 										</h4>
 									</div>
@@ -542,7 +1677,13 @@ Bhosari</a></h4>
 									<div class="card-header bg-transparent" id="collapseWhyChooseUsHeadingTwo">
 										<h4 class="card-title m-0">
 											<a class="accordion-toggle bg-transparent text-3-5 text-color-dark font-weight-semi-bold collapsed" data-bs-toggle="collapse" data-bs-target="#collapseWhyChooseUsTwo" aria-expanded="false" aria-controls="collapseWhyChooseUsTwo">
-												 WHAT WE DELIVER
+												<span class="d-flex align-items-center">
+													<!-- <span class="accordion-number">2</span> -->
+													<span>WHAT WE DELIVER</span>
+												</span>
+												<!-- <span class="accordion-icon">
+													<i class="fas fa-chevron-down"></i>
+												</span> -->
 											</a>
 										</h4>
 									</div>
@@ -556,7 +1697,13 @@ Bhosari</a></h4>
 									<div class="card-header bg-transparent" id="collapseWhyChooseUsHeadingThree">
 										<h4 class="card-title m-0">
 											<a class="accordion-toggle bg-transparent text-3-5 text-color-dark font-weight-semi-bold collapsed" data-bs-toggle="collapse" data-bs-target="#collapseWhyChooseUsThree" aria-expanded="false" aria-controls="collapseWhyChooseUsThree">
-												WHY WE EXIST
+												<span class="d-flex align-items-center">
+													<!-- <span class="accordion-number">3</span> -->
+													<span>WHY WE EXIST</span>
+												</span>
+												<!-- <span class="accordion-icon">
+													<i class="fas fa-chevron-down"></i>
+												</span> -->
 											</a>
 										</h4>
 									</div>
@@ -570,7 +1717,13 @@ Bhosari</a></h4>
 									<div class="card-header bg-transparent" id="collapseWhyChooseUsHeadingFour">
 										<h4 class="card-title m-0">
 											<a class="accordion-toggle bg-transparent text-3-5 text-color-dark font-weight-semi-bold collapsed" data-bs-toggle="collapse" data-bs-target="#collapseWhyChooseUsFour" aria-expanded="false" aria-controls="collapseWhyChooseUsThree">
-												 OUR PROMISE
+												<span class="d-flex align-items-center">
+													<!-- <span class="accordion-number">4</span> -->
+													<span>OUR PROMISE</span>
+												</span>
+												<!-- <span class="accordion-icon">
+													<i class="fas fa-chevron-down"></i>
+												</span> -->
 											</a>
 										</h4>
 									</div>
@@ -663,6 +1816,7 @@ Bhosari</a></h4>
 			</div>
 
 			<footer id="footer" class="border-0 bg-light px-3 px-lg-5 pt-0 text-3">
+
 
 				<div class="container pb-lg-4 pt-5">
 					<div class="row pt-3">
@@ -790,8 +1944,36 @@ Bhosari</a></h4>
 	<!-- Current Page Vendor and Views -->
 		<script src="js/views/view.contact.js"></script>
 
+		<!-- Custom Accordion Enhancement Script -->
+		<script>
+			document.addEventListener('DOMContentLoaded', function() {
+				// Enhance accordion functionality
+				const accordions = document.querySelectorAll('.accordion-modern-enhanced');
+
+				accordions.forEach(function(accordion) {
+					const collapseElements = accordion.querySelectorAll('.collapse');
+
+					collapseElements.forEach(function(collapseEl) {
+						// Add event listeners for smooth transitions
+						collapseEl.addEventListener('show.bs.collapse', function() {
+							const toggle = accordion.querySelector('[data-bs-target="#' + collapseEl.id + '"]');
+							if (toggle) {
+								toggle.setAttribute('aria-expanded', 'true');
+							}
+						});
+
+						collapseEl.addEventListener('hide.bs.collapse', function() {
+							const toggle = accordion.querySelector('[data-bs-target="#' + collapseEl.id + '"]');
+							if (toggle) {
+								toggle.setAttribute('aria-expanded', 'false');
+							}
+						});
+					});
+				});
+			});
+		</script>
+
 	<script defer src="https://static.cloudflareinsights.com/beacon.min.js/vcd15cbe7772f49c399c6a5babf22c1241717689176015" integrity="sha512-ZpsOmlRQV6y907TI0dKBHq9Md29nnaEIPlkf84rnaERnq6zvWvPUqr2ft8M1aS28oN72PdrCzSjY4U6VaAw1EQ==" data-cf-beacon='{"version":"2024.11.0","token":"150b9db34298478c847cc7af76484de0","r":1,"server_timing":{"name":{"cfCacheStatus":true,"cfEdge":true,"cfExtPri":true,"cfL4":true,"cfOrigin":true,"cfSpeedBrain":true},"location_startswith":null}}' crossorigin="anonymous"></script>
 </body>
 
-<!-- Mirrored from www.okler.net/previews/porto/13.0.0/demo-accounting-1.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 16 Dec 2025 12:19:48 GMT -->
 </html>
