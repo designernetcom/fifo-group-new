@@ -1110,13 +1110,13 @@
 			<div role="main" class="main px-3 px-lg-5">
 
 				<!-- Main Hero Section -->
-				<div class="border-radius-2 p-relative overflow-hidden mb-0" style="height: 750px;">
+				<div class="border-radius-2 p-relative overflow-hidden mb-0 hero-section-responsive">
 					<!-- YouTube Video Background -->
-					<div class="youtube-video-container p-absolute w-100 h-100 top-0 left-0" style="z-index: 0; pointer-events: none;">
+					<div class="youtube-video-container p-absolute w-100 h-100 top-0 left-0" style="z-index: 0; pointer-events: none; overflow: hidden;">
 						<iframe
 							id="heroYoutubeVideo"
 							src="https://www.youtube.com/embed/shKT52Y4gw0?autoplay=1&mute=1&loop=1&playlist=shKT52Y4gw0&controls=0&showinfo=0&modestbranding=1&iv_load_policy=3&rel=0&playsinline=1&enablejsapi=1&widgetid=1"
-							style="position: absolute; top: 50%; left: 50%; width: 100vw; height: 100vh; transform: translate(-50%, -50%); pointer-events: none; border: none;"
+							class="youtube-fullwidth-video"
 							frameborder="0"
 							allow="autoplay; encrypted-media"
 							allowfullscreen>
@@ -1131,7 +1131,7 @@
 
 					<!-- Hero Content -->
 					<div class="container hero-content p-relative" style="z-index: 2;">
-						<div class="row justify-content-center align-items-center" style="min-height: 750px;">
+						<div class="row justify-content-center align-items-center hero-content-height">
 							<div class="col-lg-10 text-center px-4">
 								<!-- <div class="appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="200">
 									<span class="badge bg-light text-primary rounded-pill text-uppercase font-weight-bold px-4 py-2 mb-3" style="font-size: 12px; letter-spacing: 2px;">
@@ -1168,6 +1168,75 @@
 
 				<!-- CSS to hide YouTube branding and controls -->
 				<style>
+					/* Responsive Hero Section Heights */
+					.hero-section-responsive {
+						height: 500px; /* Mobile default */
+					}
+
+					.hero-content-height {
+						min-height: 500px; /* Mobile default */
+					}
+
+					/* Tablet */
+					@media (min-width: 576px) {
+						.hero-section-responsive {
+							height: 600px;
+						}
+						.hero-content-height {
+							min-height: 600px;
+						}
+					}
+
+					/* Desktop */
+					@media (min-width: 992px) {
+						.hero-section-responsive {
+							height: 750px;
+						}
+						.hero-content-height {
+							min-height: 750px;
+						}
+					}
+
+					/* Large Desktop */
+					@media (min-width: 1400px) {
+						.hero-section-responsive {
+							height: 850px;
+						}
+						.hero-content-height {
+							min-height: 850px;
+						}
+					}
+
+					/* Full Width YouTube Video */
+					.youtube-fullwidth-video {
+						position: absolute;
+						top: 50%;
+						left: 50%;
+						width: 100%;
+						height: 100%;
+						transform: translate(-50%, -50%);
+						pointer-events: none;
+						border: none;
+						object-fit: cover;
+					}
+
+					/* Ensure video covers container maintaining aspect ratio */
+					@media (min-aspect-ratio: 16/9) {
+						.youtube-fullwidth-video {
+							width: 100%;
+							height: auto;
+							min-height: 100%;
+						}
+					}
+
+					@media (max-aspect-ratio: 16/9) {
+						.youtube-fullwidth-video {
+							width: auto;
+							height: 100%;
+							min-width: 100%;
+						}
+					}
+
 					/* Hide YouTube logo and controls */
 					.youtube-video-container {
 						overflow: hidden;
@@ -1183,20 +1252,6 @@
 						background: transparent;
 						z-index: 2;
 						pointer-events: none;
-					}
-
-					/* Ensure video covers the entire area */
-					.youtube-video-container iframe {
-						min-width: 100%;
-						min-height: 100%;
-					}
-
-					/* Hide YouTube watermark with overlay */
-					@media (max-width: 768px) {
-						.youtube-video-container iframe {
-							width: 300%;
-							height: 300%;
-						}
 					}
 				</style>
 
