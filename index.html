@@ -1111,16 +1111,26 @@
 
 				<!-- Main Hero Section -->
 				<div class="border-radius-2 p-relative overflow-hidden mb-0" style="height: 750px;">
-					<!-- Video Background -->
-					<video autoplay muted loop playsinline class="p-absolute w-100 h-100 top-0 left-0" style="object-fit: cover; z-index: 0;">
-						<source src="https://designernetcom.github.io/FIFO-Group/img/fifo.mp4" type="video/mp4">
-					</video>
+					<!-- YouTube Video Background -->
+					<div class="youtube-video-container p-absolute w-100 h-100 top-0 left-0" style="z-index: 0; pointer-events: none;">
+						<iframe
+							id="heroYoutubeVideo"
+							src="https://www.youtube.com/embed/shKT52Y4gw0?autoplay=1&mute=1&loop=1&playlist=shKT52Y4gw0&controls=0&showinfo=0&modestbranding=1&iv_load_policy=3&rel=0&playsinline=1&enablejsapi=1&widgetid=1"
+							style="position: absolute; top: 50%; left: 50%; width: 100vw; height: 100vh; transform: translate(-50%, -50%); pointer-events: none; border: none;"
+							frameborder="0"
+							allow="autoplay; encrypted-media"
+							allowfullscreen>
+						</iframe>
+					</div>
+
+					<!-- Overlay to hide YouTube controls -->
+					<div class="p-absolute w-100 h-100 top-0 left-0" style="z-index: 1; pointer-events: none;"></div>
 
 					<!-- Professional Overlay -->
 					<!-- <div class="hero-overlay"></div> -->
 
 					<!-- Hero Content -->
-					<div class="container hero-content">
+					<div class="container hero-content p-relative" style="z-index: 2;">
 						<div class="row justify-content-center align-items-center" style="min-height: 750px;">
 							<div class="col-lg-10 text-center px-4">
 								<!-- <div class="appear-animation" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="200">
@@ -1155,6 +1165,40 @@
 						</div>
 					</div>
 				</div>
+
+				<!-- CSS to hide YouTube branding and controls -->
+				<style>
+					/* Hide YouTube logo and controls */
+					.youtube-video-container {
+						overflow: hidden;
+					}
+
+					.youtube-video-container::after {
+						content: '';
+						position: absolute;
+						bottom: 0;
+						left: 0;
+						right: 0;
+						height: 80px;
+						background: transparent;
+						z-index: 2;
+						pointer-events: none;
+					}
+
+					/* Ensure video covers the entire area */
+					.youtube-video-container iframe {
+						min-width: 100%;
+						min-height: 100%;
+					}
+
+					/* Hide YouTube watermark with overlay */
+					@media (max-width: 768px) {
+						.youtube-video-container iframe {
+							width: 300%;
+							height: 300%;
+						}
+					}
+				</style>
 
 				<!-- Statistics Counter Section -->
 		
@@ -1882,7 +1926,7 @@ Bhosari</a></h4>
 							<h4 class="text-white font-weight-bold mb-4 pb-1" style="border-bottom: 2px solid #2baab1; display: inline-block;">Contact Us</h4>
 							<div class="appear-animation mt-4" data-appear-animation="fadeInUpShorter" data-appear-animation-delay="800">
 
-								<div class="mb-4">
+								<div class="">
 									<div class="feature-box align-items-start footer-contact-hover" style="transition: all 0.3s ease;">
 										<div class=" rounded-3 p-2 me-3">
 											<i class="fas fa-envelope text-white text-4"></i>
@@ -1893,7 +1937,7 @@ Bhosari</a></h4>
 									</div>
 								</div>
 
-								<div class="mb-4">
+								<div class="">
 									<div class="feature-box align-items-start footer-contact-hover" style="transition: all 0.3s ease;">
 										<div class="rounded-3 p-2 me-3">
 											<i class="fas fa-map-marker-alt text-white text-4"></i>
